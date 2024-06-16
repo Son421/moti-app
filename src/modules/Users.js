@@ -14,6 +14,10 @@ const userSchema = new mongoose.Schema({
     lowercase: true,
     trim: true,
   },
+  pointCounter:{
+    type: Number,
+    required: true,
+  },
   password: {
     type: String,
     required: true,

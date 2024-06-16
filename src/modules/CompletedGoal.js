@@ -24,9 +24,8 @@ const completedGoalSchema = new mongoose.Schema({
   executionDate: {
     type: Number,
   },
-  user: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: 'User',
+  userId: {
+    type: String,
     required: true,
   },
 }, { timestamps: true });
